@@ -1,0 +1,306 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "background": "white",
+  "padding": 5,
+  "height": 200,
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "Year": 1971,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.1
+        },
+        {
+          "Year": 1972,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.3
+        },
+        {
+          "Year": 1973,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 3.7
+        },
+        {
+          "Year": 1974,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 3.7
+        },
+        {
+          "Year": 1975,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.5
+        },
+        {
+          "Year": 1976,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.4
+        },
+        {
+          "Year": 1977,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.6
+        },
+        {
+          "Year": 1978,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.5
+        },
+        {
+          "Year": 1979,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.4
+        },
+        {
+          "Year": 1980,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 6.8
+        },
+        {
+          "Year": 1981,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 9.6
+        },
+        {
+          "Year": 1982,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 10.7
+        },
+        {
+          "Year": 1983,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 11.5
+        },
+        {
+          "Year": 1984,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 11.8
+        },
+        {
+          "Year": 1985,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 11.4
+        },
+        {
+          "Year": 1986,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 11.3
+        },
+        {
+          "Year": 1987,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 10.4
+        },
+        {
+          "Year": 1988,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 8.6
+        },
+        {
+          "Year": 1989,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 7.2
+        },
+        {
+          "Year": 1990,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 7.1
+        },
+        {
+          "Year": 1991,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 8.9
+        },
+        {
+          "Year": 1992,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 9.9
+        },
+        {
+          "Year": 1993,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 10.4
+        },
+        {
+          "Year": 1994,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 9.5
+        },
+        {
+          "Year": 1995,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 8.6
+        },
+        {
+          "Year": 1996,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 8.1
+        },
+        {
+          "Year": 1997,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 6.9
+        },
+        {
+          "Year": 1998,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 6.2
+        },
+        {
+          "Year": 1999,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 6
+        },
+        {
+          "Year": 2000,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.4
+        },
+        {
+          "Year": 2001,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.1
+        },
+        {
+          "Year": 2002,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.2
+        },
+        {
+          "Year": 2003,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5
+        },
+        {
+          "Year": 2004,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.8
+        },
+        {
+          "Year": 2005,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.8
+        },
+        {
+          "Year": 2006,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.4
+        },
+        {
+          "Year": 2007,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.3
+        },
+        {
+          "Year": 2008,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.7
+        },
+        {
+          "Year": 2009,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 7.6
+        },
+        {
+          "Year": 2010,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 7.9
+        },
+        {
+          "Year": 2011,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 8.1
+        },
+        {
+          "Year": 2012,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 8
+        },
+        {
+          "Year": 2013,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 7.6
+        },
+        {
+          "Year": 2014,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 6.2
+        },
+        {
+          "Year": 2015,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 5.4
+        },
+        {
+          "Year": 2016,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.9
+        },
+        {
+          "Year": 2017,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.4
+        },
+        {
+          "Year": 2018,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.1
+        },
+        {
+          "Year": 2019,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 3.8
+        },
+        {
+          "Year": 2020,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.6
+        },
+        {
+          "Year": 2021,
+          "Unemployment rate (aged 16 and over, seasonally adjusted): %": 4.5
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {"name": "x_step", "value": 20},
+    {
+      "name": "width",
+      "update": "bandspace(domain('x').length, 1, 0.5) * x_step"
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "line",
+      "style": ["line"],
+      "sort": {"field": "datum[\"Year\"]"},
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "#4c78a8"},
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"]) + \"; Unemployment rate (aged 16 and over, seasonally adjusted): %: \" + (format(datum[\"Unemployment rate (aged 16 and over, seasonally adjusted): %\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "y": {
+            "scale": "y",
+            "field": "Unemployment rate (aged 16 and over, seasonally adjusted): %"
+          },
+          "defined": {
+            "signal": "isValid(datum[\"Unemployment rate (aged 16 and over, seasonally adjusted): %\"]) && isFinite(+datum[\"Unemployment rate (aged 16 and over, seasonally adjusted): %\"])"
+          }
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {"data": "source_0", "field": "Year", "sort": true},
+      "range": {"step": {"signal": "x_step"}},
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "data": "source_0",
+        "field": "Unemployment rate (aged 16 and over, seasonally adjusted): %"
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Year",
+      "labelAngle": -90,
+      "labelBaseline": "top",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Unemployment rate (aged 16 and over, seasonally adjusted): %",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "config": {}
+}
