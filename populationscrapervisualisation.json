@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "data": {
+    "values": [
+      {"Country": "China", "Population": 1412600000},
+      {"Country": "India", "Population": 1375586000},
+      {"Country": "United States", "Population": 333329956},
+      {"Country": "Indonesia", "Population": 275773800},
+      {"Country": "Pakistan", "Population": 235825000},
+      {"Country": "Nigeria", "Population": 218541000},
+      {"Country": "Brazil", "Population": 215486475},
+      {"Country": "Bangladesh", "Population": 165158616},
+      {"Country": "Russia", "Population": 145100000},
+      {"Country": "Mexico", "Population": 128533664},
+      {"Country": "Japan", "Population": 125104000},
+      {"Country": "Rest of World", "Population": 3314075425}
+    ]
+  },
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {"field": "Population", "type": "quantitative"},
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "sort": ["C", "A", "B", "D", "E", "F", "G", "H", "I", "J", "K", "L"],
+      "scale": {
+        "range": [
+          "#000000",
+          "#E69F00",
+          "#56B4E9",
+          "#009E73",
+          "#F0E442",
+          "#0072B2",
+          "#D55E00",
+          "#CC79A7",
+          "#ECD4E1",
+          "#7F7E7F",
+          "#FF008D",
+          "#7BD200"
+        ]
+      }
+    }
+  },
+  "config": {}
+}
