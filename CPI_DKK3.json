@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "CPI Annual Rate: Non-energy industrial goods",
+    "subtitle": ["base year 2015=100"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 175,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/rachela14/rachela14.github.io/main/data_ONS-DKK3.json",
+    "format": {"type": "json", "property": "years"}
+  },
+  "mark": {"type": "line", "color": "#00307c", "strokeWidth": 2, "opacity": 1},
+  "transform": [
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1987,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Inflation rate %",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
