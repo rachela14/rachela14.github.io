@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Happiness Score vs Gini Index: Is a happier country more equal?",
+    "subtitle": [
+      "Happiness Score (x), Gini Index (y)",
+      "Size of points based on popluation",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/rachela14/rachela14.github.io/main/happiness_gini_data_final2.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "circle", "color": "blue", "opacity": 0.7},
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Gini Index",
+      "type": "quantitative",
+      "scale": {"domain": [20, 70]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "y": {
+      "field": "Happiness score",
+      "type": "quantitative",
+      "scale": {"domain": [2, 9]},
+      "axis": {"grid": false},
+      "title": null
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {"range": [10, 800]},
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "Country", "type": "ordinal", "title": "Country"},
+      {
+        "field": "Happiness score",
+        "type": "quantitative",
+        "title": "Happiness Score"
+      },
+      {
+        "field": "Gini Index",
+        "type": "quantitative",
+        "title": "Gini Index",
+        "format": ".1f"
+      },
+      {"field": "Population", "type": "quantitative", "title": "Population"},
+      {
+        "field": "Data year",
+        "type": "quantitative",
+        "title": "Data collected (Gini and Population"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/rachela14/rachela14.github.io/main/out_of_school_2.csv"
+  },
+
+  "mark": "bar",
+  "height": {"step": 10},
+  "encoding": {
+    "facet": {
+      "field": "Country",
+      "type": "ordinal",
+      "columns": 2,
+      "sort": {"op": "median", "field": "yield"}
+    },
+    "x": {
+      "field": "Out of School Rate (%)",
+      "type": "quantitative",
+      "scale": {"zero": false}
+    },
+    "y": {"field": "Age Group", "type": "ordinal", "sort": "-x"},
+    "color": {
+      "field": "Age Group",
+      "type": "ordinal",
+      "sort": ["Upper Secondary", "Lower Secondary", "Primary"],
+      "scale": {"range": ["green", "blue", "purple"]}
+    }
+  },
+  "config": {}
+}

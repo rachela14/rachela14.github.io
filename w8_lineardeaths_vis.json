@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/rachela14/rachela14.github.io/main/covid_deaths_data2.csv"
+  },
+  "title": {
+    "text": "UK COVID Deaths 2020-22",
+    "subtitle": "within 28 days of positive test, linear scale",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "newDeaths28DaysByDeathDate",
+      "type": "quantitative",
+      "title": "Daily COVID Death Count",
+      "axis": {"tickCount": 6}
+    }
+  },
+  "config": {}
+}

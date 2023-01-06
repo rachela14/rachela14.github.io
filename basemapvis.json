@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/rachela14/rachela14.github.io/main/worldmap.json",
+    "format": {"type": "topojson", "feature": "countries"}
+  },
+  "projection": {"type": "naturalEarth1"},
+  "mark": {
+    "type": "geoshape",
+    "fill": "lightslategray",
+    "stroke": "darkslategray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {"tooltip": {"field": "properties.name"}},
+  "config": {}
+}
