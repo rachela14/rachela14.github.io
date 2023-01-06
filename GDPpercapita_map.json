@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Global GDP per Capita",
+    "subtitle": "(Current US$), 2021, Source: World Bank",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 200,
+  "data": {
+    "url": "https://raw.githubusercontent.com/rachela14/rachela14.github.io/main/mapjson_GDPpercapita.json",
+    "format": {"type": "topojson", "feature": "countries"}
+  },
+  "projection": {"type": "naturalEarth1"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "properties.epi",
+      "type": "quantitative",
+      "scale": {"type":"log", "scheme": "blues"},
+      "sort": "descending",
+      "title": "GDP per Capita"
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {
+        "field": "properties.epi",
+        "type": "quantitative",
+        "title": "GDP per Capita"
+      }
+    ]
+  },
+  "config": {}
+}
