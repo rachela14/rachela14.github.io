@@ -192,7 +192,7 @@ h4{
     .sidenav {padding-top: 15px; width: 80px; height: auto; width: auto;}
     .sidenav a {font-size: 18px;}
       .myWeek1 { width: auto;}
-      .buttons{
+      .Buttons{
         display: flex;
         flex-direction: column;  /* To make them aligned vertically */
         justify-content: space-evenly;  /* To make them spaced evenly */
