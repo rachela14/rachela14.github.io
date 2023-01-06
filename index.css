@@ -1,0 +1,259 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my first proper css file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{ background-color: rgb(0, 51, 0);
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h3{
+    color:rgb(0, 0, 0);
+    font-family: Arial;
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+}
+
+p{
+    color:rgb(0, 0, 0);
+    font-family: Arial;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px
+}
+
+h4{
+    color:rgb(255, 255, 255);
+    font-family: Arial;
+    text-align: center;
+    margin: 30px;
+    font-size: 35px;
+    
+
+}
+    
+.title{
+    background-color: rgb(0, 51, 0);
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+
+.myWeek1{
+    margin: auto;
+    max-width: 1000px;
+    background-color: rgb(231, 231, 231);
+
+    
+}
+
+/* Chart formatting */
+.chart{
+    background-color: rgb(255, 255, 255);
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+/* Specific formatting for these two graphs, due to weird outcomes*/
+#Chart1, #Chart2 {
+    background-color: rgb(255, 255, 255);
+    width:346px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.Buttons{
+    margin-top: 50px;
+    display: flex;
+        flex-direction: row;  /* To make them aligned vertically */
+        justify-content: space-evenly;  /* To make them spaced evenly */
+        }
+
+
+/* button options */
+#link{
+    background-color: rgb(231, 231, 231);
+
+    padding:25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    border:4px;
+    border-color: rgb(120, 120, 120);
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+    color:black;
+    font-size: 0.8cm;
+
+    
+    text-decoration: none;
+}
+
+#text{
+    color: black;
+}
+
+#link:hover{
+
+    background-color: rgba(120, 120, 120, 0.8);
+
+    border:2px;
+    border-color:rgb(120, 120, 120);
+    border-style: solid;
+    
+    margin-block: 5;
+}
+
+/* containers to centre objects */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+   
+}
+
+.container2 {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    max-width: 1000px;
+    column-gap: 20px;
+    
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    max-width: 1000px;
+
+    background-color: bisque;
+    width:346px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: rgb(249, 185, 183);
+
+}
+
+.container4 {
+    width: 50%;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(0, 51, 0); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(231, 231, 231);
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: rgb(11, 11, 11);
+  }
+
+@media screen and (max-width: 420px) {
+    .sidenav {padding-top: 15px; width: 80px; height: auto; width: auto;}
+    .sidenav a {font-size: 18px;}
+      .myWeek1 { width: auto;}
+      .Buttons{
+        display: flex;
+        flex-direction: column;  /* To make them aligned vertically */
+        justify-content: space-evenly;  /* To make them spaced evenly */
+        }
+
+}
+
+
+
+
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center !important;
+    vertical-align: bottom;
+    text-align: center !important;
+    align-content: center;
+    max-width: 90%;
+    margin:auto;
+    max-width: 1000px;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    font-size: xx-small;
+    letter-spacing: 0.1px;
+
+  }
+  .grid-item {
+    background-color: white;
+    padding: 10px;
+    text-align: left; 
+    border-width: .2em;
+    height: 250px; /* can do %s here too! */
+    width: 300px;
+    display: inline-block !important;
+    min-width: 280px;
+    font-size: 10px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  
+  .chart7{
+    background-color: white;
+    padding: 0.2em  !important;
+    text-align: center; 
+    border-width: .2em;
+    height: 100%; /* can do %s here too! */
+    width: 500px;
+    display: inline-block !important;
+    min-width: 280px;
+    margin: .2em
+  }
