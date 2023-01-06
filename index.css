@@ -80,6 +80,9 @@ h4{
 
 .Buttons{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;  /* To make them aligned vertically */
+    justify-content: space-evenly;  /* To make them spaced evenly */
     
 }
 
